@@ -34,7 +34,7 @@ class ValidaFormulario {
             const label = campo.previousElementSibling.innerText; // pegue o irmão anterior do campo(é o label) e pegue seu texto
             if(!campo.value) {  //uma string vazia avalia em false
                 this.createError(campo, `${label} não pode estar em branco`); // usa o label para dizer o nome do campo
-                valid = false; // porque os campos estão vazio
+                valid = false; // porque os campos estão branco
                 
          }
             if(campo.classList.contains('cpf')) {  // se campo conter cpf cai aqui
